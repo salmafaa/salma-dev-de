@@ -1,0 +1,19 @@
+[2026-05-29T00:43:09.492+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-29T00:43:09.547+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: agency_ingestion.extract_excel manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:43:09.566+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: agency_ingestion.extract_excel manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:43:09.568+0000] {taskinstance.py:2885} INFO - Starting attempt 3 of 3
+[2026-05-29T00:43:09.587+0000] {taskinstance.py:2908} INFO - Executing <Task(_PythonDecoratedOperator): extract_excel> on 2026-05-29 00:35:01.780754+00:00
+[2026-05-29T00:43:09.637+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'agency_ingestion', 'extract_excel', 'manual__2026-05-29T00:35:01.780754+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/agency_ingestion_dag.py', '--cfg-path', '/tmp/tmp38vvda0n']
+[2026-05-29T00:43:09.617+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=316) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-29T00:43:09.643+0000] {standard_task_runner.py:105} INFO - Job 46: Subtask extract_excel
+[2026-05-29T00:43:09.643+0000] {standard_task_runner.py:72} INFO - Started process 317 to run task
+[2026-05-29T00:43:09.819+0000] {task_command.py:467} INFO - Running <TaskInstance: agency_ingestion.extract_excel manual__2026-05-29T00:35:01.780754+00:00 [running]> on host 23bc61432137
+[2026-05-29T00:43:10.095+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='entroli' AIRFLOW_CTX_DAG_ID='agency_ingestion' AIRFLOW_CTX_TASK_ID='extract_excel' AIRFLOW_CTX_EXECUTION_DATE='2026-05-29T00:35:01.780754+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-29T00:35:01.780754+00:00'
+[2026-05-29T00:43:10.103+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-05-29T00:43:10.961+0000] {python.py:240} INFO - Done. Returned value was: {'filepath': '/opt/***/data/Agency.xlsx', 'rows': [{'Period': '2025-W03', 'Creator Username': '@budi_cooks', 'GMV (IDR)': 15750000.0, 'Live GMV': 9000000.0, 'Video GMV': 6750000.0, 'Orders': 87.0, 'CTR': 0.0421, 'CVR': 0.0727}, {'Period': '2025-W03', 'Creator Username': '@sari_fashion', 'GMV (IDR)': 8320000.0, 'Live GMV': None, 'Video GMV': 8320000.0, 'Orders': 45.0, 'CTR': 0.0315, 'CVR': None}, {'Period': '2025-W04', 'Creator Username': '@budi_cooks', 'GMV (IDR)': None, 'Live GMV': None, 'Video GMV': None, 'Orders': None, 'CTR': None, 'CVR': None}]}
+[2026-05-29T00:43:11.008+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-05-29T00:43:11.009+0000] {taskinstance.py:361} INFO - Marking task as SUCCESS. dag_id=agency_ingestion, task_id=extract_excel, run_id=manual__2026-05-29T00:35:01.780754+00:00, execution_date=20260529T003501, start_date=20260529T004309, end_date=20260529T004311
+[2026-05-29T00:43:11.077+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-29T00:43:11.094+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

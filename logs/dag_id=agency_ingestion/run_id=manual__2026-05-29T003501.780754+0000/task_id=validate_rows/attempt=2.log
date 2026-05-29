@@ -1,0 +1,115 @@
+[2026-05-29T00:43:11.896+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-29T00:43:11.954+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: agency_ingestion.validate_rows manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:43:11.973+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: agency_ingestion.validate_rows manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:43:11.975+0000] {taskinstance.py:2885} INFO - Starting attempt 2 of 2
+[2026-05-29T00:43:11.999+0000] {taskinstance.py:2908} INFO - Executing <Task(_PythonDecoratedOperator): validate_rows> on 2026-05-29 00:35:01.780754+00:00
+[2026-05-29T00:43:12.012+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=320) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-29T00:43:12.018+0000] {standard_task_runner.py:72} INFO - Started process 321 to run task
+[2026-05-29T00:43:12.017+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'agency_ingestion', 'validate_rows', 'manual__2026-05-29T00:35:01.780754+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/agency_ingestion_dag.py', '--cfg-path', '/tmp/tmp10wcvutf']
+[2026-05-29T00:43:12.020+0000] {standard_task_runner.py:105} INFO - Job 47: Subtask validate_rows
+[2026-05-29T00:43:12.138+0000] {task_command.py:467} INFO - Running <TaskInstance: agency_ingestion.validate_rows manual__2026-05-29T00:35:01.780754+00:00 [running]> on host 23bc61432137
+[2026-05-29T00:43:12.336+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='entroli' AIRFLOW_CTX_DAG_ID='agency_ingestion' AIRFLOW_CTX_TASK_ID='validate_rows' AIRFLOW_CTX_EXECUTION_DATE='2026-05-29T00:35:01.780754+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-29T00:35:01.780754+00:00'
+[2026-05-29T00:43:12.339+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-05-29T00:43:12.348+0000] {taskinstance.py:3337} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/dags/agency_ingestion_dag.py", line 70, in validate_rows
+    from src.ingestion import ingest_agency_excel
+ModuleNotFoundError: No module named 'src'
+[2026-05-29T00:43:12.393+0000] {taskinstance.py:1242} INFO - Marking task as FAILED. dag_id=agency_ingestion, task_id=validate_rows, run_id=manual__2026-05-29T00:35:01.780754+00:00, execution_date=20260529T003501, start_date=20260529T004311, end_date=20260529T004312
+[2026-05-29T00:43:12.452+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-05-29T00:43:12.453+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 47 for task validate_rows (No module named 'src'; 321)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3030, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 282, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3209, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 776, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 742, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/dags/agency_ingestion_dag.py", line 70, in validate_rows
+    from src.ingestion import ingest_agency_excel
+ModuleNotFoundError: No module named 'src'
+[2026-05-29T00:43:12.474+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-05-29T00:43:12.506+0000] {taskinstance.py:3925} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-29T00:43:12.511+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2026-05-29T00:47:19.428+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-29T00:47:19.478+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: agency_ingestion.refresh_matview manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:47:19.495+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: agency_ingestion.refresh_matview manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:47:19.496+0000] {taskinstance.py:2885} INFO - Starting attempt 2 of 2
+[2026-05-29T00:47:19.512+0000] {taskinstance.py:2908} INFO - Executing <Task(_PythonDecoratedOperator): refresh_matview> on 2026-05-29 00:35:01.780754+00:00
+[2026-05-29T00:47:19.522+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=384) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-29T00:47:19.524+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'agency_ingestion', 'refresh_matview', 'manual__2026-05-29T00:35:01.780754+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/agency_ingestion_dag.py', '--cfg-path', '/tmp/tmp59goxnmi']
+[2026-05-29T00:47:19.525+0000] {standard_task_runner.py:72} INFO - Started process 385 to run task
+[2026-05-29T00:47:19.525+0000] {standard_task_runner.py:105} INFO - Job 51: Subtask refresh_matview
+[2026-05-29T00:47:19.607+0000] {task_command.py:467} INFO - Running <TaskInstance: agency_ingestion.refresh_matview manual__2026-05-29T00:35:01.780754+00:00 [running]> on host 23bc61432137
+[2026-05-29T00:47:19.746+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='entroli' AIRFLOW_CTX_DAG_ID='agency_ingestion' AIRFLOW_CTX_TASK_ID='refresh_matview' AIRFLOW_CTX_EXECUTION_DATE='2026-05-29T00:35:01.780754+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-29T00:35:01.780754+00:00'
+[2026-05-29T00:47:19.747+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-05-29T00:47:19.777+0000] {base.py:84} INFO - Retrieving connection 'postgres_entropi'
+[2026-05-29T00:47:19.788+0000] {sql.py:850} INFO - Running statement: REFRESH MATERIALIZED VIEW CONCURRENTLY mv_weekly_gmv_by_tier;, parameters: None
+[2026-05-29T00:47:19.819+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-05-29T00:47:19.837+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-05-29T00:47:19.838+0000] {taskinstance.py:361} INFO - Marking task as SUCCESS. dag_id=agency_ingestion, task_id=refresh_matview, run_id=manual__2026-05-29T00:35:01.780754+00:00, execution_date=20260529T003501, start_date=20260529T004719, end_date=20260529T004719
+[2026-05-29T00:47:19.889+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-29T00:47:19.912+0000] {taskinstance.py:3925} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-29T00:47:19.916+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

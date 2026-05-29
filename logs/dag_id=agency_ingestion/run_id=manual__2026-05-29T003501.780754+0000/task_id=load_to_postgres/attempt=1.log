@@ -1,0 +1,21 @@
+[2026-05-29T00:45:43.237+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-05-29T00:45:43.277+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: agency_ingestion.load_to_postgres manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:45:43.291+0000] {taskinstance.py:2632} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: agency_ingestion.load_to_postgres manual__2026-05-29T00:35:01.780754+00:00 [queued]>
+[2026-05-29T00:45:43.292+0000] {taskinstance.py:2885} INFO - Starting attempt 1 of 3
+[2026-05-29T00:45:43.307+0000] {taskinstance.py:2908} INFO - Executing <Task(_PythonDecoratedOperator): load_to_postgres> on 2026-05-29 00:35:01.780754+00:00
+[2026-05-29T00:45:43.317+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-29T00:45:43.320+0000] {standard_task_runner.py:72} INFO - Started process 364 to run task
+[2026-05-29T00:45:43.320+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'agency_ingestion', 'load_to_postgres', 'manual__2026-05-29T00:35:01.780754+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/agency_ingestion_dag.py', '--cfg-path', '/tmp/tmpuqiwfxif']
+[2026-05-29T00:45:43.321+0000] {standard_task_runner.py:105} INFO - Job 49: Subtask load_to_postgres
+[2026-05-29T00:45:43.391+0000] {task_command.py:467} INFO - Running <TaskInstance: agency_ingestion.load_to_postgres manual__2026-05-29T00:35:01.780754+00:00 [running]> on host 23bc61432137
+[2026-05-29T00:45:43.515+0000] {taskinstance.py:3158} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='entroli' AIRFLOW_CTX_DAG_ID='agency_ingestion' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2026-05-29T00:35:01.780754+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-29T00:35:01.780754+00:00'
+[2026-05-29T00:45:43.517+0000] {taskinstance.py:740} INFO - ::endgroup::
+[2026-05-29T00:45:43.542+0000] {base.py:84} INFO - Retrieving connection 'postgres_entropi'
+[2026-05-29T00:45:43.560+0000] {python.py:240} INFO - Done. Returned value was: 2
+[2026-05-29T00:45:43.598+0000] {taskinstance.py:349} INFO - ::group::Post task execution logs
+[2026-05-29T00:45:43.599+0000] {taskinstance.py:361} INFO - Marking task as SUCCESS. dag_id=agency_ingestion, task_id=load_to_postgres, run_id=manual__2026-05-29T00:35:01.780754+00:00, execution_date=20260529T003501, start_date=20260529T004543, end_date=20260529T004543
+[2026-05-29T00:45:43.650+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-05-29T00:45:43.681+0000] {taskinstance.py:3925} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-29T00:45:43.684+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

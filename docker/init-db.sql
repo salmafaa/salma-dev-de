@@ -1,0 +1,2 @@
+CREATE DATABASE entroly_db;
+GRANT ALL PRIVILEGES ON DATABASE entroly_db TO salma_dev;
