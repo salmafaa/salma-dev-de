@@ -3079,3 +3079,101 @@
 [2026-05-29T03:59:06.307+0000] {logging_mixin.py:190} INFO - [2026-05-29T03:59:06.307+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-05-29T03:59:06.348+0000] {logging_mixin.py:190} INFO - [2026-05-29T03:59:06.348+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
 [2026-05-29T03:59:06.385+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.193 seconds
+[2026-05-29T03:59:36.544+0000] {processor.py:186} INFO - Started process (PID=3114) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T03:59:36.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T03:59:36.551+0000] {logging_mixin.py:190} INFO - [2026-05-29T03:59:36.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T03:59:36.585+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T03:59:36.634+0000] {logging_mixin.py:190} INFO - [2026-05-29T03:59:36.634+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T03:59:36.674+0000] {logging_mixin.py:190} INFO - [2026-05-29T03:59:36.673+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T03:59:36.719+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.183 seconds
+[2026-05-29T04:00:07.023+0000] {processor.py:186} INFO - Started process (PID=3121) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:07.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:00:07.031+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:07.030+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:07.070+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:07.126+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:07.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:00:07.179+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:07.179+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:00:07.253+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.241 seconds
+[2026-05-29T04:00:37.553+0000] {processor.py:186} INFO - Started process (PID=3128) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:37.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:00:37.560+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:37.559+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:37.600+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:00:37.659+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:37.659+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:00:37.711+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:00:37.710+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:00:37.750+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.207 seconds
+[2026-05-29T04:01:08.292+0000] {processor.py:186} INFO - Started process (PID=3135) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:08.295+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:01:08.300+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:08.299+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:08.332+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:08.381+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:08.380+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:01:08.416+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:08.416+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:01:08.453+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.168 seconds
+[2026-05-29T04:01:38.663+0000] {processor.py:186} INFO - Started process (PID=3142) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:38.666+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:01:38.670+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:38.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:38.701+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:01:38.749+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:38.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:01:38.784+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:01:38.783+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:01:38.849+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.196 seconds
+[2026-05-29T04:02:09.273+0000] {processor.py:186} INFO - Started process (PID=3149) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:09.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:02:09.282+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:09.281+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:09.343+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:09.416+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:09.415+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:02:09.466+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:09.465+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:02:09.518+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.255 seconds
+[2026-05-29T04:02:39.742+0000] {processor.py:186} INFO - Started process (PID=3156) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:39.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:02:39.751+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:39.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:39.800+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:02:39.871+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:39.869+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:02:39.919+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:02:39.918+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:02:39.966+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.235 seconds
+[2026-05-29T04:03:10.398+0000] {processor.py:186} INFO - Started process (PID=3163) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:10.401+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:03:10.407+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:10.406+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:10.466+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:10.525+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:10.524+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:03:10.565+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:10.565+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:03:10.613+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.231 seconds
+[2026-05-29T04:03:40.761+0000] {processor.py:186} INFO - Started process (PID=3171) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:40.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:03:40.769+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:40.768+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:40.803+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:03:40.859+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:40.858+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:03:40.905+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:03:40.905+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:03:40.937+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.185 seconds
+[2026-05-29T04:04:11.107+0000] {processor.py:186} INFO - Started process (PID=3178) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:11.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:04:11.115+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:11.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:11.157+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:11.208+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:11.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:04:11.248+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:11.247+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:04:11.296+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.201 seconds
+[2026-05-29T04:04:41.732+0000] {processor.py:186} INFO - Started process (PID=3185) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:41.734+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:04:41.740+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:41.739+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:41.776+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:04:41.831+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:41.830+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:04:41.867+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:04:41.867+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:04:41.914+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.190 seconds
+[2026-05-29T04:05:12.159+0000] {processor.py:186} INFO - Started process (PID=3193) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:12.162+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:05:12.168+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:12.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:12.210+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:12.271+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:12.271+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:05:12.317+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:12.317+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:05:12.360+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.211 seconds
+[2026-05-29T04:05:42.665+0000] {processor.py:186} INFO - Started process (PID=3201) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:42.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:05:42.673+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:42.672+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:42.707+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:05:42.766+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:42.765+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:05:42.819+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:05:42.818+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:05:42.867+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.211 seconds
+[2026-05-29T04:06:13.237+0000] {processor.py:186} INFO - Started process (PID=3208) to work on /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:06:13.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/src/dags/agency_ingestion_dag.py for tasks to queue
+[2026-05-29T04:06:13.245+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:06:13.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:06:13.276+0000] {processor.py:925} INFO - DAG(s) 'agency_ingestion' retrieved from /opt/airflow/src/dags/agency_ingestion_dag.py
+[2026-05-29T04:06:13.317+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:06:13.317+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-29T04:06:13.350+0000] {logging_mixin.py:190} INFO - [2026-05-29T04:06:13.349+0000] {dag.py:4180} INFO - Setting next_dagrun for agency_ingestion to 2026-05-25 02:00:00+00:00, run_after=2026-06-01 02:00:00+00:00
+[2026-05-29T04:06:13.398+0000] {processor.py:208} INFO - Processing /opt/airflow/src/dags/agency_ingestion_dag.py took 0.169 seconds
